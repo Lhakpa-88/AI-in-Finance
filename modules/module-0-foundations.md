@@ -1,5 +1,5 @@
 # Module 0 — Orientation & AI Foundations for Finance
-**Duration: 2.0 hours** · Part of *AI for Finance Professionals* (20-hr PBL course)
+**Duration: 1.5 hours** · Part of *AI for Finance Professionals* (20-hr PBL course)
 
 > Standalone facilitator brief. See `../course-design/delivery-methodology.md` for the session rhythm used in every module.
 

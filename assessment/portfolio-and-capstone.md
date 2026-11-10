@@ -11,7 +11,7 @@ Each module produces one artifact. Collected, these form the participant's evide
 | 3 | Three-audience variance narrative set |
 | 4 | Reusable data-cleaning recipe |
 | 5 | Worked eligibility determination with clauses |
-| 6 | Audit-prep checklist + management-response template |
+| 6 | Bank reconciliation statement + partner transaction sampling pack (plan, selection, workpaper, exceptions, follow-up letter) + audit-prep checklist |
 | 7 | Two-scenario cash-flow projection + board narrative |
 | 8 | Capstone package + org AI-Use Playbook draft |
 

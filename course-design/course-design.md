@@ -69,13 +69,13 @@ The course is **20 contact hours**. Three viable schedules — pick to fit the c
 
 | # | Module | Hrs | Core problem it solves |
 |---|---|---|---|
-| 0 | Orientation & AI foundations for finance | 2.0 | "What is this thing actually doing, and where does it lie?" |
+| 0 | Orientation & AI foundations for finance | 1.5 | "What is this thing actually doing, and where does it lie?" |
 | 1 | The trustworthy assistant: verification & data protection | 2.0 | "A colleague pasted our donor budget into a chatbot — now what?" |
 | 2 | Building & stress-testing budgets | 2.0 | "I have a proposal deadline and a blank budget template." |
 | 3 | Donor financial reports & narratives | 2.0 | "The variance narrative is due and the numbers don't speak for themselves." |
 | 4 | Excel & messy-data wrangling | 2.5 | "This export is a mess and reconciliation is tomorrow." |
 | 5 | Compliance & policy interrogation | 2.5 | "Is this cost eligible under the donor rules *and* local tax law?" |
-| 6 | Reconciliation, audit prep & anomaly spotting | 2.0 | "Audit is in three weeks and I need to find problems before they do." |
+| 6 | Bank reconciliation, partner transaction sampling & audit prep | 2.5 | "The bank rec won't balance, three partner ledgers just landed, and audit is in three weeks." |
 | 7 | Forecasting, cash flow & scenarios | 2.0 | "The board wants a 6-month cash runway with two scenarios." |
 | 8 | Capstone + organisational AI-use playbook | 3.0 | "How do we make this safe and repeatable for the whole team?" |
 
@@ -85,7 +85,7 @@ The course is **20 contact hours**. Three viable schedules — pick to fit the c
 
 ## 6. Module detail
 
-### Module 0 — Orientation & AI foundations for finance *(2 hrs)*
+### Module 0 — Orientation & AI foundations for finance *(1.5 hrs)*
 
 **Problem scenario:** Two AI outputs are projected — one is correct, one contains a plausible but wrong total and an invented donor regulation. Groups must decide which to trust and *why*, with no prior instruction.
 
@@ -179,17 +179,21 @@ The course is **20 contact hours**. Three viable schedules — pick to fit the c
 
 ---
 
-### Module 6 — Reconciliation, audit prep & anomaly spotting *(2 hrs)*
+### Module 6 — Bank reconciliation, partner transaction sampling & audit prep *(2.5 hrs)*
 
-**Problem scenario:** The external audit is in three weeks. You want to find the timesheet gaps, coding errors, and odd transactions *before* the auditor does.
+**Problem scenario:** The quarter-end bank reconciliation has unexplained differences, three implementing partners have just submitted ledgers of several hundred transactions each, and the external audit is in three weeks. As grants accountant you cannot voucher every partner line, but you must sign off on partner spend and find your own problems before the auditor does.
 
-**Concepts:** using AI to draft an audit-readiness checklist, describe patterns to look for, summarise findings, and draft management-response language — while keeping the actual detection human-led on real (protected) data.
+**Part A — Bank reconciliation *(≈45 min)*:** using AI to match bank statement against cash book, list unmatched items on both sides, classify each reconciling item (outstanding payments, deposits in transit, unbooked charges, errors) and draft the adjusting entry — then **rebuilding the reconciliation statement independently** so adjusted bank balance equals adjusted book balance. Where ledger-embedded AI suggests matches, what it still gets wrong.
 
-**Hands-on:** feed AI a synthetic transaction extract and ask it to flag anomalies and explain its reasoning; then have participants critique which flags are real vs. noise.
+**Part B — Audit sampling of partner transactions *(≈60 min)*:** the core skill for grants accountants who review partner financial reports. Why 100% review is neither feasible nor expected; population, sampling unit and key-item threshold; the main approaches (risk-based/judgemental, random, stratified, monetary unit, systematic) and when each fits; sample size as a documented judgement driven by partner risk, prior findings and materiality; the per-item testing procedure (document exists, approved, arithmetically correct, in budget and period, donor-eligible, goods/services received, correctly recorded); and the documentation an auditor expects. AI drafts the sampling plan, stratifies the ledger, generates a **reproducible** selection (or the formula that does), produces the testing workpaper, and drafts the exceptions summary and partner follow-up letter. The accountant sets the risk rating and threshold, does the vouching, and reaches the conclusion.
 
-**Verification focus:** AI-flagged "anomalies" are leads, not conclusions; every flag is investigated, not actioned blindly.
+**Part C — Anomaly spotting and audit readiness *(≈30 min)*:** drafting an audit-readiness checklist, describing ledger-wide patterns for AI to flag (duplicates, round-number cash payments, split payments under approval limits, post-period dates), and drafting management-response language. The anomaly sweep complements the sample; it does not replace it.
 
-**Deliverable:** an audit-prep checklist + a template management-response paragraph.
+**Hands-on:** synthetic bank statement + cash book with seeded differences; a synthetic partner ledger (~600 lines) with seeded key items, a round-number cash cluster, post-period transactions and missing vouchers, plus a partner risk profile and a mini set of supporting documents to voucher against.
+
+**Verification focus:** the rebuilt reconciliation must balance to zero or the AI's matching is wrong; the sample must capture the key items and the risky clusters, and must be reproducible on re-run; invented "standard" sample sizes or donor rules are challenged for a source; AI-flagged anomalies are leads, not conclusions. Vendor and staff names in partner ledgers are redacted before any real-world use.
+
+**Deliverable:** a completed bank reconciliation with explained items; a **partner transaction sampling pack** (plan and rationale, reproducible selection, testing workpaper, exceptions summary, follow-up letter template); an audit-prep checklist + management-response paragraph.
 
 ---
 
@@ -230,7 +234,7 @@ This mirrors the "narrow-and-governed" model that distinguishes high-impact adop
 
 Finance professionals learn by doing, so assessment is **evidence of applied competence**, not recall:
 
-1. **Portfolio (60%)** — the artifact produced in each module (red-line card, budget, variance narratives, cleaning recipe, eligibility determination, audit checklist, forecast). Assessed against a competency rubric.
+1. **Portfolio (60%)** — the artifact produced in each module (red-line card, budget, variance narratives, cleaning recipe, eligibility determination, bank reconciliation and partner sampling pack, audit checklist, forecast). Assessed against a competency rubric.
 2. **Capstone (30%)** — the integrated group deliverable + individual reflection.
 3. **Verification discipline (10%)** — observed throughout: did they check the AI's work, protect data, and cite sources? This is graded *behaviour*, because it is the whole point.
 
@@ -255,7 +259,7 @@ The AI-tools landscape moves quarterly — treat any named product as illustrati
 
 ## 9. Facilitator preparation notes
 
-- **Use synthetic data only in class.** Prepare realistic-but-fake datasets (budget, transaction export, timesheet extract, donor guideline excerpt). Never bring real donor/beneficiary/salary data into the room — the course must model its own red-lines.
+- **Use synthetic data only in class.** Prepare realistic-but-fake datasets (budget, transaction export, bank statement + cash book, partner ledger with supporting vouchers, timesheet extract, donor guideline excerpt). Never bring real donor/beneficiary/salary data into the room — the course must model its own red-lines.
 - **Pre-test every prompt** on the day's actual tools; outputs drift as models update.
 - **Localise Module 5** to the cohort's real donors and tax jurisdiction (e.g., specific donor cost principles + local VAT/TDS/income-tax provisions). This is where the course earns credibility.
 - **Seed the deliberate failures** — the invented regulation, the wrong total, the data-protection trap. Learning to *catch* AI is the highest-value skill here.

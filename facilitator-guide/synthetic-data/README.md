@@ -11,7 +11,7 @@
 | 3 | A budget-vs-actual table with interesting variances |
 | 4 | A deliberately messy ledger/bank export (merged cells, bad dates, duplicates) |
 | 5 | A public donor cost-principle excerpt + a local tax provision |
-| 6 | A synthetic transaction extract with embedded anomalies |
+| 6 | A bank statement + cash-book extract with seeded differences; a partner ledger (~600 lines) with seeded key items, cash cluster, post-period dates and missing vouchers; a partner risk profile; a mini set of supporting vouchers |
 | 7 | Opening cash position + inflow/outflow assumptions |
 | 8 | A mixed capstone brief with a data-protection trap embedded |
 
