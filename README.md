@@ -39,6 +39,7 @@ AI-in-Finance/
 ├── facilitator-guide/
 │   ├── README.md                 ← how to run the course
 │   ├── preparation-checklist.md
+│   ├── tools-and-prompts.md      ← which AI tool + which prompts for each module's problem
 │   └── synthetic-data/README.md  ← how to build safe fake datasets (real data never committed)
 ├── assessment/
 │   ├── rubric.md

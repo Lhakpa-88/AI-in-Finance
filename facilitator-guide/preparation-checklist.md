@@ -11,7 +11,7 @@
 - [ ] Deliberate "gotcha" failures seeded (wrong total, invented regulation, data-protection trap)
 - [ ] Module 6 sampling procedure localised to main donors' expenditure-verification requirements
 - [ ] Module 5 localised: donor cost-principle excerpt + local tax/VAT/TDS provision
-- [ ] Every demo prompt pre-tested on the current tool versions
+- [ ] Every demo prompt in `tools-and-prompts.md` pre-tested on the current tool versions
 
 ## Participant-facing
 - [ ] Assessment rubric shared in advance
